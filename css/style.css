@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #dddddd;
+    background-color: #222222;
+}
+
+main {
+    width: 1000px;
+    height: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* setting css*/
+
+
+#setting {
+    width: 250px;
+    height: 60%;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#setting_form label{
+    display: flex;
+    align-items: center;
+    height: 23px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#setting button {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: 4px solid #dddddd;
+    border-radius: 10px;
+    color: #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#setting #start-button {
+    background-color: #4366ff;
+}
+#setting #start-button:hover {
+    background-color: #18255d;
+}
+
+#setting #stop-button {
+    background-color: #ff4343;
+    margin-bottom: 30px;
+}
+#setting #stop-button:hover {
+    background-color: #5d1818;
+}
+
+#setting #reset-button {
+    background-color: #505050;
+}
+#setting #reset-button:hover {
+    background-color: #000000;
+}
+
+#setting #save-button {
+    background-color: #24a1a6;
+}
+#setting #save-button:hover {
+    background-color: #0d4b4f;
+}
+
+#setting #detail {
+    color: #dddddd;
+}
+#setting #detail:hover {
+    opacity: 0.7;
+}
+
+
+/* game-display css*/
+
+#game-display {
+    height: 100%;
+    position: relative;
+}
+
+#game-lane {
+    width: 600px;
+    height: 100%;
+    border-top: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    display: flex;
+}
+
+#game-lane .arrow-display {
+    border-right: 1px solid #dddddd;
+    width: 25%;
+    position: relative;
+}
+
+#game-display #game-lift {
+    position: absolute;
+    width: 600px;
+    height: 20%;
+    bottom: 0;
+    background-color: #222222;
+    border: 2px solid #dddddd;
+    border-top: 4px solid #ff0000;
+    z-index: 10;
+}
+
+
+
+
+/* arrow-judge css*/
+
+.arrow-display .arrow-judge {
+    width: 100%;
+}
+
+.arrow-display:nth-child(1) .arrow-judge {
+    transform: rotate(0deg);
+}
+
+.arrow-display:nth-child(2) .arrow-judge {
+    transform: rotate(270deg);
+}
+
+.arrow-display:nth-child(3) .arrow-judge {
+    transform: rotate(90deg);
+}
+
+.arrow-display:nth-child(4) .arrow-judge {
+    transform: rotate(180deg);
+}
+
+
+/* arrow css*/
+
+.arrow-display:nth-child(1) .arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: rotate(0deg);
+}
+
+.arrow-display:nth-child(2) .arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: rotate(270deg);
+}
+
+.arrow-display:nth-child(3) .arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+.arrow-display:nth-child(4) .arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transform: rotate(180deg);
+}
